@@ -9,7 +9,7 @@ export class Bomb extends Component {
     }
   }
   render() {
-  const message = this.state.props.secondsLeft === 0? 'go boom!':`{this.state.secondsLeft} seconds left before I go boom!`
+  const message = this.state.secondsLeft === 0? 'go boom!':`${this.state.secondsLeft} seconds left before I go boom!`
     return (
       <div>
         <p>{message}</p>
